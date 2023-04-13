@@ -1,0 +1,33 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+.idea/
+*.iml
+
+# Folders
+_obj
+_test
+vendor/
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+
+# Debug
+debug.*
+*.test
+
+# Output
+*.exe
+*.test.exe
+*.prof
+*.test.prof
+*.out
+
+# Other
+*.log
+*.json
+*.yaml
+*.yml
+*.sqlite3
