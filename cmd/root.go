@@ -10,7 +10,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Short: "A tool to install Kubernetes",
-	Long:  `This tool helps you install Kubernetes, preflight system configuration and copy certificates.`,
+	Long:  `This tool helps you install Kubernetes, preflight system configuration and add node.`,
 }
 
 func Execute() error {

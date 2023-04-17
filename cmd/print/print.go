@@ -21,13 +21,14 @@ func printYamlExample() {
 	config := k8s.Config{
 		K8s: k8s.K8sConfig{
 			KubernetesVersion: "1.26.3",
-			ServiceCIDR:       "172.17.1.0/24",
-			PodNetworkCIDR:    "172.17.2.0/24",
+			CalicoVersion:     "v3.25.0",
+			ServiceCIDR:       "192.170.0.0/16",
+			PodNetworkCIDR:    "192.171.0.0/16",
 		},
 		Machine: []k8s.MachineInfo{
-			{Name: "master", Address: "172.1.1.1", Port: 22, User: "root", Password: "password1"},
-			{Name: "node1", Address: "172.1.1.1", Port: 22, User: "root", Password: "password1"},
-			{Name: "node2", Address: "172.1.1.2", Port: 22, User: "root", Password: "password2"},
+			{Name: "master", Address: "192.168.1.1", Port: 22, User: "root", Password: "password1"},
+			{Name: "node1", Address: "192.168.1.1", Port: 22, User: "root", Password: "password1"},
+			{Name: "node2", Address: "192.168.1.2", Port: 22, User: "root", Password: "password2"},
 		},
 		Group: k8s.GroupConfig{
 			Etcd:         []string{"master", "node1", "node2"},
